@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+
+{% block body_block %}
+	<form method="post">
+	    <p>Are you sure you want to delete the Shelf No: "{{ object }}" ?</p>
+	    <input type="submit" class = 'btn btn-warning' value="Submit" />
+	    <a class = 'btn btn-danger' id = 'cancel_shelf' href = "../shelf_list">Cancel</a>
+	</form>
+{% endblock %}
